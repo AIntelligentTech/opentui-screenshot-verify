@@ -96,7 +96,7 @@ wait_and_capture() {
   sleep "$wait_time"
 
   log "Capturing screenshot..."
-  "$SCRIPT_DIR/screenshot-capture.sh" "$output" -x
+  "$SCRIPT_DIR/screenshot-capture.sh" "$output"
 
   if [[ ! -f "$output" ]]; then
     error "Screenshot capture failed"
